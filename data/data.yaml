@@ -1,0 +1,62 @@
+#nome: "lili"
+#Nome: "nana"
+
+#data: {"name":"lili","pwd":"1234"}
+
+##左对齐
+#data1:
+#  name: "lili"
+#  pwd: "1234"
+
+##yaml格式
+#data2:
+#  - "name"
+#  - "nana"
+
+##python格式
+#data3: ["lili","1234"]
+
+##拼接-json格式
+#data4:
+#  - name: "lili"
+#  - pwd: "1234"
+
+
+#------纯量-------
+
+##字符串  特殊情况
+#name: lili
+
+##布尔值  yaml格式
+#bool1: true
+#bool2: false
+
+#布尔值  python格式
+#bool3: True
+#bool4: False
+
+#整数  浮点数
+#int1: 122
+#float1: 12.0002124
+
+## 空类型   None 类型
+#bool5: ~
+#bool6: null
+#bool7: Null
+#bool8:
+
+##日期类型
+#data1: 2020-6-5 11:17:40
+#data2: 2020-06-05
+#data3: "12:12:12"
+
+##锚点
+#info: &data
+#  name: "lili"
+#  phone: "12222222222"
+#addr: &data1
+#  <<: *data
+#  detail: "花园路110号"
+#concat:
+#  <<: *data1
+#  bir: "2020-06-05"
